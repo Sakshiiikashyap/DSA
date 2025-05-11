@@ -1,0 +1,2 @@
+# DSA
+📘 DSA Daily Progress Tracker  This repository is dedicated to my journey of learning Data Structures and Algorithms (DSA). I’m documenting my daily progress, practicing problems, and building a strong foundation in core DSA concepts. The goal is to stay consistent, track improvement over time, and eventually master problem-solving for technical interviews and competitive programming.  🗓️ Daily Logs | ✅ Practice Problems | 📚 Notes & Concepts
