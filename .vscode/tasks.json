@@ -2,19 +2,20 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build and run C++",
+      "label": "build C++ file",
       "type": "shell",
-      "command": "cmd",
+      "command": "g++",
       "args": [
-        "/c",
-        "g++ \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"],
-      "detail": "Compile and run C++"
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
