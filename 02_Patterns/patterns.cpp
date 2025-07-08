@@ -25,6 +25,7 @@ void print3(int n) {
         cout << endl;
     }
 }
+
 void print4(int n) {
     for(int i=1; i<=n; i++){
         for(int j=1; j<=i; j++){
@@ -167,6 +168,6 @@ int main(){
     for(int i=0; i<t; i++){
         int n;
         cin >> n;
-        print16(n);
+        print7(n);
     }
 }
