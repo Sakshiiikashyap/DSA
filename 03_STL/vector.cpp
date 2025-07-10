@@ -10,7 +10,19 @@ void explainVector() {
     vector<pair<int,int>> vec;
     v.push_back({1,2});
     v.emplace_back(1,2);
+
+    vector<int> v(5, 100);   //{100,100,100,100,100}
+
+    vecotr<int> v(5);        //{0,0,0,0,0}
+    //can you increase the size? yes by using push_back
+
+    vector<int> v1(5, 20);
+
+    vector<int> v2(v1)      //another container but copy of v1
+
+    //how to access elements in vector.
     
+
 }
 int main() {
     explainVector();
