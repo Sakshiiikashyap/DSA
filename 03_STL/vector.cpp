@@ -21,6 +21,14 @@ void explainVector() {
     vector<int> v2(v1)      //another container but copy of v1
 
     //how to access elements in vector.
+    vector<int>::iterator it = v.begin();
+
+    it++;
+    cout << *(it) << " ";
+
+    it = it+2;
+    cout << *(it) << " ";
+    
     
 
 }
