@@ -28,8 +28,15 @@ void explainVector() {
 
     it = it+2;
     cout << *(it) << " ";
-    
-    
+
+    vector<int>::iterator it=v.end();
+
+    vector<int>::iterator it=v.rend();
+
+    vector<int>::iterator it=v.rbegin();
+
+    cout << v[0] << " " << v.at(0);
+    cout << v.back() << " ";
 
 }
 int main() {
