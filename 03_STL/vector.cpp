@@ -35,7 +35,35 @@ void accessIterator() {
     it++; 
     cout << *(it) << " "; //10 will be printed.    
     it+=2;                //shifted exactly by 2 position.
-    cout << *(it) << " "; //6 will be printed.
+    cout << *(it) << endl;; //6 will be printed.
+
+    //print vector
+    for(vector<int>::iterator it=v.begin(); it!=v.end(); it++){
+        cout <<*(it) << endl;
+    }
+
+    //another method
+    for(auto it=v.begin(); it!=v.end(); it++) {  //auto --> automatically defines the iterator.
+        cout << *(it) << " ";
+    }
+
+    //other method(for each loop)
+    for(auto it : v){        //{20, 30, 40} -->
+        cout << it << " ";  // it, it, it
+    }
+
+    //deletion
+    //{20, 12, 13, 15, 19, 40}
+    v.erase(v.begin()+1); //12 will be deleted {20, 13, 15, 19, 40}
+    //deletion in pair
+    v.erase(v.begin()+2, v.begin()+3); //13 and 15 are deleted 
+    //{20, 12, 19, 40} [start, end) -->start will be deleted and the elements before end
+
+    //insertion function
+    vector<int> vec(2,100);           //{100, 100}
+    vec.insert(vec.begin(), 20);      //{20, 100, 100}
+    vec.insert(vec.begin() +1, 2, 5); //{20, 5, 5, 100, 100}
+
 }
     /*
     another iterators apart from v.begin.
@@ -45,7 +73,6 @@ void accessIterator() {
     then pointing the location right after the last element.
     v.rbegin  ---> pointing to first element of reversed iterator. i.e 7
     */
-
   
 
 int main() {
