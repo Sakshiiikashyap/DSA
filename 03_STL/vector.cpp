@@ -34,11 +34,17 @@ void accessIterator() {
     //to access the the element at the memory we use star                                 
     it++; 
     cout << *(it) << " "; //10 will be printed.    
-
     it+=2;                //shifted exactly by 2 position.
     cout << *(it) << " "; //6 will be printed.
 }
-    
+    /*
+    another iterators apart from v.begin.
+    {20, 10, 15, 6, 7}
+    v.end();  ---> points to the memory. location that is right after the last element.
+    v.rend(); ---> reverse the vector ({7, 6, 15, 10, 20})
+    then pointing the location right after the last element.
+    v.rbegin  ---> pointing to first element of reversed iterator. i.e 7
+    */
 
   
 
