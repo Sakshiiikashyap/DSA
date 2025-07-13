@@ -21,13 +21,14 @@ void explainVector() {
     vector<int> v2(v1)      //another container but copy of v1
 
     //how to access elements in vector.
-    vector<int>::iterator it = v.begin();
+    //{20, 10, 15, 6, 7}
+    vector<int>::iterator it = v.begin();    //v.begin points to memory address of the vector.
+    //to access the the element at the memory we use star                                 
+    it++; 
+    cout << *(it) << " ";   //10 will be printed.    
 
-    it++;
-    cout << *(it) << " ";
-
-    it = it+2;
-    cout << *(it) << " ";
+    it = it+2; //shifted exactly by 2 position.
+    cout << *(it) << " "; //6 will be printed.
 
     vector<int>::iterator it=v.end();
 
