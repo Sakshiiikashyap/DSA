@@ -41,7 +41,9 @@ void accessIterator() {
     vector<int> v = {20, 10, 15, 6, 7};
     vector<int>::iterator it = v.begin();    //v.begin points to memory address of the vector.
 
-    //to access the the element at the memory we use star                                 
+    //*(it)---> to access anything at memory
+    //to access the the element at the memory we use star 
+
     it++; 
     cout << *(it) << " "; //10 will be printed.    
     it+=2;                //shifted exactly by 2 position.
@@ -51,7 +53,7 @@ void accessIterator() {
     for(vector<int>::iterator it=v.begin(); it!=v.end(); it++){
         cout <<*(it) << endl;
     }
-
+ 
     //another method
     for(auto it=v.begin(); it!=v.end(); it++) {  //auto --> automatically defines the iterator.
         cout << *(it) << " ";
@@ -69,12 +71,16 @@ void accessIterator() {
     v.erase(v.begin()+2, v.begin()+3); //13 and 15 are deleted 
     //{20, 12, 19, 40} [start, end) -->start will be deleted and the elements before end
 
+}
+ void insertion() {
     //insertion function
     vector<int> vec(2,100);           //{100, 100}
     vec.insert(vec.begin(), 20);      //{20, 100, 100}
     vec.insert(vec.begin() +1, 2, 5); //{20, 5, 5, 100, 100}
-
-}
+    for(auto it : vec){
+        cout << it << " ";
+    }
+ }
     /*
     another iterators apart from v.begin.
     {20, 10, 15, 6, 7}
@@ -86,6 +92,6 @@ void accessIterator() {
   
 
 int main() {
-    declare();
+    insertion();
     return 0;
 }
