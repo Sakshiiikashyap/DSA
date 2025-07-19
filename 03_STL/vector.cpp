@@ -1,18 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//define vector
+//declare vector
 void explainVector() {
     vector<int>v;       //creates empty container
     v.push_back(1);     //{1}
     v.emplace_back(2);  //{1, 2} dynamically increases the size
+
+    //to print vector
+    for(auto it : v) {
+        cout << it << " ";
+    }
 }
 
-//define vector of pair
+//declare vector of pair
 void definePair() {
-    vector<pair<int,int>> v;
+    vector<pair<int, int>> v;
     v.push_back({1,2});
-    v.emplace_back(1,2);
+    v.emplace_back(3, 4);
+
+    for(auto it : v) {
+        cout << " (" << it.first << "," << it.second << ") ";
+    }
+    cout << endl;
 }
 
 void declare() {
@@ -37,7 +47,7 @@ void accessIterator() {
     it+=2;                //shifted exactly by 2 position.
     cout << *(it) << endl;; //6 will be printed.
 
-    //print vector
+    //print vector(3 methods)
     for(vector<int>::iterator it=v.begin(); it!=v.end(); it++){
         cout <<*(it) << endl;
     }
@@ -76,6 +86,6 @@ void accessIterator() {
   
 
 int main() {
-    accessIterator();
+    declare();
     return 0;
 }
