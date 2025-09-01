@@ -141,7 +141,6 @@ void p13(int n){
         cout << endl;
     }
 }
-
 void p14(int n){
     for(int i=0; i<n; i++){
         for(char j='A'; j<'A'+n-i; j++){
@@ -163,24 +162,24 @@ void p15(int n){
 
 
 
-// void p16(int n){
-//     char ch='A';
-//     for(int i=0; i<n; i++){
-//         //space
-//         for(int j=0; j<n-i-1; j++){
-//             cout << " ";
-//         }
-//         //alphabet
-//         for(int j=0; j<2*i+1; j++){
-//             cout << ch;
-//         }
-//         //space
-//         for(int j=0; j<n-i-1; j++){
-//             cout << " ";
-//         }
-//         cout << endl;
-//     }
-// }
+void p16(int n){
+    char ch='A';
+    for(int i=0; i<n; i++){
+        //space
+        for(int j=0; j<n-i-1; j++){
+            cout << " ";
+        }
+        //alphabet
+        for(int j=0; j<2*i+1; j++){
+            cout << ch;
+        } 
+        //space
+        for(int j=0; j<n-i-1; j++){
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
 
 
 
@@ -190,5 +189,5 @@ void p15(int n){
 int main() {
     int n;
     cin >> n;
-    p15(n);
+    p16(n);
 }
