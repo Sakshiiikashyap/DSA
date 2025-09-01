@@ -93,6 +93,72 @@ void p9(int n) {
         cout << endl;
     }
 }
+void p10(int n) {
+    int start = 1;
+    for(int i=0; i<n; i++){
+        if(i%2==0)start = 1;
+        else start=0;
+        for(int j=0; j<=i; j++){
+            cout << start;
+            start = 1-start;
+        }
+        cout << endl;
+    }
+}
+void p11(int n) {
+    for(int i=1; i<=n; i++){
+        //number
+        for(int j=1; j<=i; j++){
+            cout << j;
+        }
+        //space
+        for(int j=1; j<=(2*n)-(2*i); j++){
+            cout << " ";
+        }
+        //number
+        for(int j=i; j>=1; j--){
+            cout << j;
+        }
+        cout << endl;
+    }
+}
+
+void p12(int n){
+    int start = 1;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<=i; j++){
+            cout << start << " ";
+            start += 1;
+        }
+        cout << endl;
+    }
+}
+void p13(int n){
+    for(int i=0; i<n; i++){
+        for(char j='A'; j<='A'+i; j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
+
+void p14(int n){
+    for(int i=0; i<n; i++){
+        for(char j='A'; j<'A'+n-i; j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
+void p15(int n){
+    for(char i='A'; i<='A'+n; i++){
+        for(int j=1; j<i; j++){
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
+
 
 
 
@@ -101,5 +167,5 @@ void p9(int n) {
 int main() {
     int n;
     cin >> n;
-    p9(n);
+    p15(n);
 }
