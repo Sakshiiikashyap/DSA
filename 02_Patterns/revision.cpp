@@ -122,7 +122,6 @@ void p11(int n) {
         cout << endl;
     }
 }
-
 void p12(int n){
     int start = 1;
     for(int i=0; i<n; i++){
@@ -160,17 +159,16 @@ void p15(int n){
     }
 }
 
-
-
 void p16(int n){
-    char ch='A';
     for(int i=0; i<n; i++){
         //space
         for(int j=0; j<n-i-1; j++){
             cout << " ";
         }
         //alphabet
-        for(int j=0; j<2*i+1; j++){
+        char ch='A';
+        int breakpoint = (2*i+1)/2;
+        for(int j=1; j<2*i+1; j++){
             cout << ch;
         } 
         //space
@@ -189,5 +187,5 @@ void p16(int n){
 int main() {
     int n;
     cin >> n;
-    p16(n);
+    p15(n);
 }
