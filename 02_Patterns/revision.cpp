@@ -41,7 +41,7 @@ void p5(int n) {
         cout << endl;
     }
 }
-void p6(int n){
+void p6(int n) {
     for(int i=1; i<=n; i++){
         for(int j=1; j<=n-i+1; j++){
             cout << j << " ";
@@ -49,7 +49,7 @@ void p6(int n){
         cout << endl;
     }
 }
-void p7(int n){
+void p7(int n) {
     for(int i=1; i<=n; i++){
         //space
         for(int j=0; j<n-i; j++){
@@ -178,12 +178,6 @@ void p16(int n){
         cout << endl;
     }
 }
-
-
-
-
-
-
 int main() {
     int n;
     cin >> n;
