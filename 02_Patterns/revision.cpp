@@ -168,8 +168,10 @@ void p16(int n){
         //alphabet
         char ch='A';
         int breakpoint = (2*i+1)/2;
-        for(int j=1; j<2*i+1; j++){
+        for(int j=1; j<=2*i+1; j++){
             cout << ch;
+            if(j <= breakpoint) ch++;
+            else ch--;
         } 
         //space
         for(int j=0; j<n-i-1; j++){
@@ -181,5 +183,5 @@ void p16(int n){
 int main() {
     int n;
     cin >> n;
-    p15(n);
+    p16(n);
 }
