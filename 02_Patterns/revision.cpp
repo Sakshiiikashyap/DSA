@@ -158,7 +158,6 @@ void p15(int n){
         cout << endl;
     }
 }
-
 void p16(int n){
     for(int i=0; i<n; i++){
         //space
@@ -180,8 +179,53 @@ void p16(int n){
         cout << endl;
     }
 }
+void p17(int n) {
+    for(int i=0; i<n; i++){
+        for(char ch='E'-i; ch<='E'; ch++){
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+
+void p18(int n){
+    for(int i=0; i<n; i++){
+        //stars
+        for(int j=0; j<n-i; j++){
+            cout << "*";
+        }
+        //space
+        for(int j=0; j<2*i; j++){
+            cout << " ";
+        }
+        //stars
+        for(int j=0; j<n-i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i=0; i<n; i++){
+        //stars
+        for(int j=0; j<n-i; j++){
+            cout << "*";
+        }
+        //space
+        for(int j=0; j<(2*n-2*i)-2; j++){
+            cout << " ";
+        }
+        //stars
+        for(int j=0; j<n-i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+}
+
+
 int main() {
     int n;
     cin >> n;
-    p16(n);
+    p18(n);
 }
