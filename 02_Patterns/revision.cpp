@@ -189,6 +189,7 @@ void p17(int n) {
 }
 
 void p18(int n){
+    //for first half
     for(int i=0; i<n; i++){
         //stars
         for(int j=0; j<n-i; j++){
@@ -204,10 +205,10 @@ void p18(int n){
         }
         cout << endl;
     }
-
+    //other half pattern
     for(int i=0; i<n; i++){
         //stars
-        for(int j=0; j<n-i; j++){
+        for(int j=0; j<=i; j++){
             cout << "*";
         }
         //space
@@ -215,7 +216,7 @@ void p18(int n){
             cout << " ";
         }
         //stars
-        for(int j=0; j<n-i; j++){
+        for(int j=0; j<=i; j++){
             cout << "*";
         }
         cout << endl;
