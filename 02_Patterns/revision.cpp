@@ -251,6 +251,7 @@ void p20(int n){
             if(i == 0|| j == 0|| i == n-1|| j == n-1){
                 cout "*";
             }
+            cout << endl;
         }
     }
 }
