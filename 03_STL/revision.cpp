@@ -12,13 +12,15 @@ void valueV() {
     cin >> p.first >> p.second.first >> p.second.second;
     cout << p.second.first;
 }
+
 // to store the arr[]
 void arrV() {
     pair<int,int> arr[] = {{1,2}, {3,4}, {5,6}};
+    cout << arr[2].first;
     
 }
 
  int main() {
-    valueV();
+    arrV();
     return 0;
  }
