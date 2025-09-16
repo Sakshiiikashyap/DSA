@@ -17,7 +17,6 @@ void storeArr() {
     cout << arr[1].second;
 
 }
-    
 
 
 int main() {

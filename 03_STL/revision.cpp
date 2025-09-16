@@ -16,8 +16,7 @@ void valueV() {
 // to store the arr[]
 void arrV() {
     pair<int,int> arr[] = {{1,2}, {3,4}, {5,6}};
-    cout << arr[2].first;
-    
+    cout << arr[2].first << " " << arr[2].second;
 }
 
  int main() {
