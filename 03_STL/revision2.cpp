@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void explainV() {
+    vector<int> saks;
+    saks.push_back(1);
+    saks.emplace_back(2);
+    for(auto it:saks){
+        cout << it << " ";
+    }
+}
+
+/*You are given N students, each with a name and marks.
+ You need to store them in a vector<pair<string, int>> and then print all students.*/ 
+
+void ques() {
+    vector<pair<string, int>> students;
+    students.push_back({"sakshi", 80});
+    students.emplace_back("raj", 90);
+    students.emplace_back("riya", 70);
+    cout << "list:" << endl;
+    //to print pair when used in vectors
+    for (auto &st : students) {  
+    cout << st.first << " " << st.second << endl;
+    }
+}
+
+int main() {
+    ques();
+}

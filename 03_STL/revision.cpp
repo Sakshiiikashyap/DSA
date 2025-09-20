@@ -20,6 +20,6 @@ void arrV() {
 }
 
  int main() {
-    arrV();
+    valueV();
     return 0;
  }
