@@ -63,16 +63,27 @@ void accessIterator() {
     for(auto it : v){        //{20, 30, 40} -->
         cout << it << " ";  // it, it, it
     }
+    cout << endl;
+}
 
+void deletion() {
     //deletion
     //{20, 12, 13, 15, 19, 40}
-    v.erase(v.begin()+1); //12 will be deleted {20, 13, 15, 19, 40}
+    vector<int> v4 = {20, 12, 13, 15, 19, 40};
+    v4.erase(v4.begin()+1); //12 will be deleted {20, 13, 15, 19, 40}
+    for(auto it : v4){
+        cout << it << " ";
+    }
+    cout << endl;
     //deletion in pair
-    v.erase(v.begin()+2, v.begin()+3); //13 and 15 are deleted 
-    //{20, 12, 19, 40} [start, end) -->start will be deleted and the elements before end
-
+    v4.erase(v4.begin()+2, v4.begin()+4); //13 and 15 are deleted 
+    //{20, 13, 40} [start, end) -->start will be deleted and the elements before end
+    for(auto it : v4){
+        cout << it << " ";
+    }
 }
- void insertion() {
+
+void insertion() {
     //insertion function
     vector<int> vec(2,100);           //{100, 100}
     vec.insert(vec.begin(), 20);      //{20, 100, 100}
@@ -89,9 +100,44 @@ void accessIterator() {
     then pointing the location right after the last element.
     v.rbegin  ---> pointing to first element of reversed iterator. i.e 7
     */
-  
+
+void func() {
+    vector<int> v={10,20,89,70};
+    cout << v.size(); //to check the size of vector
+    cout << endl;
+
+    // to pop out the element
+    v.pop_back(); //last element is poped out
+    for(auto it:v){
+        cout << it << " ";
+    }
+    cout << v.empty();
+    //will tell if your vector is empty or not 
+    // 1--> empty 0--->> not empty
+
+    //to swap two vectors
+    cout << endl;
+    vector<int> v1 = {10, 20};
+    vector<int> v2 = {40, 50};
+    v1.swap(v2);
+    for(auto it:v1){
+        cout << it << " ";
+    }
+    cout << endl;
+    for(auto it:v2){
+        cout << it << " ";
+    }
+
+    cout << endl;
+    v1.clear();
+    for(auto it : v1){
+        cout << it;
+    }
+     cout << v2.empty();
+}
+
 
 int main() {
-    insertion();
+    func();
     return 0;
 }

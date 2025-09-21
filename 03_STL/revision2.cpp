@@ -6,7 +6,7 @@ void explainV() {
     saks.push_back(1);
     saks.emplace_back(2);
     for(auto it:saks){
-        cout << it << " ";
+        cout << it << endl;
     }
 }
 
@@ -25,6 +25,21 @@ void ques() {
     }
 }
 
+//increase size of vector
+void prac(){
+    vector<int> v1(5,20);
+    for(auto it:v1){
+        cout << it << " ";
+    }
+    cout << endl;
+    //here we have increased the size using push_back
+    v1.push_back(21);
+    for(auto it:v1){
+        cout << it << " ";
+    }
+}
+
+
 int main() {
-    ques();
+    prac();
 }
