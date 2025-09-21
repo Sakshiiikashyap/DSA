@@ -20,8 +20,8 @@ void ques() {
     students.emplace_back("riya", 70);
     cout << "list:" << endl;
     //to print pair when used in vectors
-    for (auto &st : students) {  
-    cout << st.first << " " << st.second << endl;
+    for (auto &it : students) {  
+    cout << it.first << " " << it.second << endl;
     }
 }
 
