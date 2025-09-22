@@ -138,6 +138,6 @@ void func() {
 
 
 int main() {
-    func();
+    insertion();
     return 0;
 }
