@@ -1,18 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void reverseNum(int n){
-    cout << endl;
-    while(n>0) {
-        int lastDigit = n%10;
-        cout << lastDigit << endl;
-        n = n/10;
+void revNum(int n) {
+    long revN = 0; //to store 8 bit
+    while(n != 0){
+        int ld = n % 10;
+        revN = (revN * 10) + ld;
+        n = n/10; 
+        if (revN > INT_MAX || revN < INT_MIN); //to avoid overflow 
     }
+    cout << revN;
 }
-int main(){
+int main() {
     int n;
-    cout << "Enter the num:";
+    cout << "enter the num: ";
     cin >> n;
-    reverseNum(n);
+    revNum(n);
     return 0;
 }
