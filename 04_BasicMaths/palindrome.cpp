@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 //chack if num is palindrome or not
-void checkPal(int n){
+bool checkPal(int n){
     // if(n < 0) return false;
     int dup = n;
     long revN = 0;
