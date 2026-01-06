@@ -122,13 +122,40 @@ void pattern(int n){
     // }
 
     
-    for(int i=0; i<n; i++){
-        char alpha ='A'+i;
-        for(int j=0; j<=i; j++){
-            cout<<alpha<<" ";
-        }
-        cout<<endl;
-    }
+    // for(int i=0; i<n; i++){
+    //     char alpha ='A'+i;
+    //     for(int j=0; j<=i; j++){
+    //         cout<<alpha<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // for(int i=0; i<n; i++){
+    //     for(char chr='E'-i; chr<='E'; chr++){
+    //         cout<<chr<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // for(int i=0; i<n; i++){
+    //     //space
+    //     for(int j=0; j<n-i-1; j++){
+    //         cout<<" ";
+    //     }
+    //     char chr='A';
+    //     int breakpoint = (2*i+1)/2;
+    //     for(char j=1; j<=2*i+1; j++){
+    //         cout<<chr;
+    //         if(j<=breakpoint) chr++;
+    //         else chr--;
+    //     }
+    //     for(int j=0; j<n-i-1; j++){
+    //         cout<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    
 
 }
 
