@@ -72,11 +72,29 @@ void divisor(int n){
         sort(ls.begin(), ls.end());
         for(auto it:ls)cout<<it<<" ";
 }
+void checkPrime(int n){
+    int cnt=0;
+    for(int i=1; i<=sqrt(n); i++){
+        if(n%i==0){
+            cnt++;
+            if(n/i != i) cnt++;
+        }
+    }
+    if(cnt==2) cout<<"true";
+    else cout<<"false";
+}
+void gcd(int a, int b){
+    while(a>0 && b>0){
+        if(a>b) a = a%b;
+        else b=b%a;
+    }
+    if(a==0) cout<<b;
+    else cout<<a;
+}
 
 int main() {
-    int n;
-    cout << "Enter the number: ";
-    cin >> n;
-    divisor(n);
+    int a, b;
+    cin >> a >> b;
+    gcd(a, b);
     return 0;
 }
