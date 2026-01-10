@@ -12,9 +12,14 @@ void print(int i, int n){
     // if(i>n) return;
     // cout<<"sakshi"<<endl;
     // print(i+1, n);
-    if(i>n) return;
-    cout<<i<<" ";
-    print(i+1, n);
+
+    // if(i>n) return;
+    // cout<<i<<" ";
+    // print(i+1, n);
+
+    if(n<i) return;
+    cout<<n<<" ";
+    print(i, n-1);
 }
 int main(){
     int n;
