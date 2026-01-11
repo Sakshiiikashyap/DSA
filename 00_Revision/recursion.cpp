@@ -17,10 +17,19 @@ void print(int i, int n){
     // cout<<i<<" ";
     // print(i+1, n);
 
-    if(n<i) return;
-    cout<<n<<" ";
-    print(i, n-1);
+    // if(n<i) return;
+    // cout<<n<<" ";
+    // print(i, n-1);
+
+    // if(i<1) return;
+    // print(i-1, n);
+    // cout<<i<<" ";
+
+    if(i>n) return;
+    print(i+1, n);
+    cout<<i<<" ";
 }
+
 int main(){
     int n;
     cin>>n;
