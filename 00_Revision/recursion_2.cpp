@@ -34,19 +34,25 @@ bool palin(int i, string &s){
     if(s[i]!= s[s.size()-i-1]) return false;
     return palin(i+1, s);
 }
+//find nth fibonacci using multiple recusrsion
+int fibo(int n){
+    if(n<=1) return n;
+    int last=fibo(n-1);
+    int sLast=fibo(n-2);
+    return last + sLast;
+}
 
 int main() {
-    // int n;
-    // cin>>n;
+    int n;
+    cin>>n;
     // int arr[n];
-    // for(int i=0; i<n; i++){
     //     cin>>arr[i];
     // }
     // reverse(0, arr, n);
     // for(int i=0; i<n; i++){
     //     cout<<arr[i]<<" ";
     // }
-    string s;
-    cin>>s;
-    cout<<palin(0, s);
+    // string s;
+    // cin>>s;
+    cout<<fibo(n);
 }
