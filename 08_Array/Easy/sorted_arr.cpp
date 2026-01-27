@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+//union of sorted arrays
 class Solution {
   public:
     vector<int> findUnion(vector<int> &a, vector<int> &b) {
