@@ -1,13 +1,16 @@
-from typing import List
 class Solution:
-    def search(self, nums: List[int], x: int) -> int:
+    def search(self, nums: List[int], x: int) -> bool:
         n = len(nums)
         low = 0
         high = n-1
         while low<=high:
             mid = (low+high)//2
             if nums[mid] == x:
-                return mid
+                return True
+            if nums[low] == nums[mid] == nums[high]:
+                low += 1
+                high -= 1
+                continue
             if nums[low]<=nums[mid]:
                 if nums[low]<=x and x<=nums[mid]:
                     high = mid-1
@@ -18,6 +21,4 @@ class Solution:
                     low = mid+1
                 else:
                     high = mid-1
-        return -1
-sol = Solution()
-print(sol.search([7,8,9,1,2,3,4,5,6], 1))
+        return False
