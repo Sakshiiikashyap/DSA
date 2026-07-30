@@ -44,5 +44,5 @@ class Solution:
         if ans[0] == -1:
             return 0
         else:
-            return ans[1] -ans[0]+1 
+            return ans[1] - ans[0]+1 
             
