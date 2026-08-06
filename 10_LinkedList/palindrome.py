@@ -13,7 +13,7 @@ class Solution:
             prev = curr
             curr = nxt
         return prev
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+    def isPalindrome(self, head) -> bool:
         if not head and head.next:
             return True
         slow = head

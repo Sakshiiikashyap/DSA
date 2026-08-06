@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+    def reverseBetween(self, head, left: int, right: int):
         dummy = ListNode(0)
         dummy.next = head
         prev = dummy
